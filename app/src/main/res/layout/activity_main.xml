@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.testappunreadcountapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Send++"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Clear"/>
+
+
+    <Button
+        android:id="@+id/btn_send_98"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Send 98++"/>
+
+    <Button
+        android:id="@+id/btn_send_native_notifi"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Send Native Notifiacatoni"/>
+
+    <Button
+        android:id="@+id/btn_lib_send"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="btn_lib_send"/>
+
+    <Button
+        android:id="@+id/btn_lib_remove"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="btn_lib_remove"/>
+
+
+    <Button
+        android:id="@+id/btn_qqapp_send"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="btn_qqapp_send"/>
+
+    <Button
+        android:id="@+id/btn_qqapp_send_99"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="btn_qqapp_sendqq+"/>
+
+    <Button
+        android:id="@+id/btn_qqapp_remove"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="btn_qqapp_remove"/>
+</LinearLayout>
