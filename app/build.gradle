@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'findbugs'
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -21,12 +20,12 @@ android {
 
 
 
-    /*task findbugs(type: FindBugs,dependsOn:'assembleDebug') {
+    task findbugs(type: FindBugs) {
 
         ignoreFailures= true
         effort= "default"
         reportLevel= "high"
-        println( "$project.buildDir")
+        println( "project.buildDir: $project.buildDir")
         classes = files("$project.buildDir/intermediates/classes")
         source= fileTree("src/main/java/")
         classpath= files()
@@ -40,35 +39,11 @@ android {
                 destination "$project.buildDir/findbugs.html"
             }
         }
-    }*/
+    }
 
     lintOptions {
         abortOnError false
     }
-
-
-
-    apply plugin: "findbugs"
-
-    repositories {
-        mavenCentral()
-    }
-
-    task findbugs(type: FindBugs) {
-        //toolVersion = "2.0.1"
-        ignoreFailures = true
-        effort = "max"
-        reportLevel = "low"
-        classes = files("$project.buildDir/intermediates/classes")
-        source = fileTree('build/intermediates/classes/debug/com/sn/')
-        classpath = files()
-        reports {
-            xml {
-                destination "build/findbugs.xml"
-            }
-        }
-    }
-
 
     apply plugin: "checkstyle"
 
